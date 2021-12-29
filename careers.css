@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+p, a{
+    font-family: 'Abhaya Libre', serif;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.brand-title{
+    margin: 0 5rem;
+    cursor: pointer;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 0.5rem 0;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    margin:0 2rem;
+    font-family: serif;
+    font-weight: 900;
+    font-size: 17.5px;
+    color: #808080;
+    cursor: pointer;
+}
+
+.navbar-links li a:hover{
+    color: #000000;
+    border-bottom: 2px solid #035803; 
+}
+
+#current a{
+    color: #000000;
+    border-bottom: 2px solid #035803;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 5px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.career{
+    background: url(./images/careers-bg.jpg);
+    background-position: bottom;
+    text-align: center;
+    width: 100%;
+    height: 75vh;
+    background-repeat: no-repeat;
+}
+
+.career h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 45px;
+    padding-top: 9rem;
+    color: #000000;
+}
+
+.career p{
+    padding: 1rem 10rem;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.life-at{
+    margin-top: -10rem;
+}
+
+.life-at h3{
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #808080;
+    padding-top: 15rem;
+}
+
+.life-at h1{
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 0.5rem;
+    color: rgb(66, 66, 66);
+}
+
+.la-line{
+    border-bottom: 10px solid #035803;
+    margin: 0 33rem; 
+}
+
+.life-at p{
+    padding: 3rem 50rem 4rem 5rem;
+    font-size: 20px;
+    font-weight: 300;
+    color: #424141;
+}
+
+.cr-img{
+    padding: 1rem 3rem 2rem 2.5rem; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.jobs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 3rem 0 4rem 0;
+    padding: 2rem 10rem;
+    grid-gap: 3rem 1.5rem;
+}
+
+.text{ 
+    text-align: center;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 10px;
+}
+
+.text h3{
+    padding: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text p{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.text button a{
+    text-decoration: none;
+    color: #035803;
+}
+
+.text button{
+    margin: 1rem 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    background-color: transparent;
+    border: 1px solid #035803;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.text button:hover{
+    background: #f5f5f5;
+}
+
+.questions{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(51, 51, 51);
+    letter-spacing: 1px;
+    padding: 3rem 20rem;
+}
+
+.qtn{
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.qtn h3{
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.qtn-line{
+    padding: 0.5rem 0;
+    border-bottom: 3px solid #f5f5f5;
+    margin-bottom: 1rem;
+}
+
+.qtn a{
+    text-decoration: none;
+    color: #f5f5f5;
+    padding-top: 2rem;
+}
+
+footer{
+    text-align: center;
+    background: #222;
+    letter-spacing: 1px;
+}
+
+footer p{
+    padding-top: 4rem;
+    color: #f5f5f5;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer h6{
+    padding: 1rem 0 3rem 0;
+    color: #f5f5f5;
+    font-weight: 550;  
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px){
+    .brand-title{
+        margin: 0;
+    }
+    
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        display: block;
+        margin: .5rem 1rem;
+    }
+
+    .navbar-links li a:hover{
+        border-bottom: none
+    }
+    
+    #current a{
+        border-bottom: none;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .carrer h1{
+        padding-top: 5rem;
+    }
+
+    .career p{
+        padding: 1rem;
+        text-align: justify;
+    }
+
+    .la-line{
+        margin: 0 3rem;
+    }
+
+    .life-at p{
+        padding: 3rem 1rem 4rem 1rem;
+    }
+
+    .cr-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jobs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        padding: 4rem 0.5rem;
+        grid-gap: 2rem 0.5rem;
+    }
+
+    .questions{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem 0;
+    }
+
+    .qtn h3{
+        padding-top: 2rem;
+    } 
+
+    .qtn-line{
+        margin: 0 10rem 1rem 10rem;
+    }
+
+    footer{
+        text-align: center;
+        background: #222;
+        letter-spacing: 0.1rem;
+    }
+
+    footer p{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    footer h6{
+        padding-bottom:10px;
+        font-size: 10px; 
+    }
+
+} 

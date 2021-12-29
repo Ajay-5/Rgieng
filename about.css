@@ -1,0 +1,443 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+p, a{
+    font-family: 'Abhaya Libre', serif;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.brand-title{
+    margin: 0 5rem;
+    cursor: pointer;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 0.5rem 0;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    margin:0 2rem;
+    font-family: serif;
+    font-weight: 900;
+    font-size: 17.5px;
+    color: #808080;
+    cursor: pointer;
+}
+
+.navbar-links li a:hover{
+    color: #000000;
+    border-bottom: 2px solid #035803; 
+}
+
+#current a{
+    color: #000000;
+    border-bottom: 2px solid #035803;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 5px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+
+.about-us{
+    background: url(./images/About-us-bg.jpg);
+    background-position: right;
+    text-align: center;
+    width: 100%;
+    height: 75vh;
+    background-repeat: no-repeat;
+}
+
+.about-us h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 45px;
+    padding-top: 12rem;
+    color: #1d1d1d;
+}
+
+.about-us p{
+    padding: 1rem 10rem;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f5f5f5f5;
+    letter-spacing: 1px;
+}
+
+.us{
+    text-align: center;
+    margin: 6rem;
+}
+
+.us i{
+    color: #035803;
+}
+
+.us p{
+    padding: 3rem 11rem;
+    line-height: 2rem;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1d1d1d;
+}
+
+.line{
+    border-bottom: 2px solid #a0a0a0;
+    margin: 0 8rem;
+}
+
+.text{
+    display: flex;
+    margin: 2rem 8rem;
+    padding: 0.5rem 0 8rem 0;
+    letter-spacing: 0.2px;
+}
+
+.text h3{
+    text-transform: uppercase;  
+    font-size: 20px;
+    font-weight: bolder;
+    color: #161616;
+    line-height: 25px;
+    padding-right: 6rem;
+    
+}
+
+.text p{
+    font-size: 20px;
+    color: #696969;
+    letter-spacing: 0.2px;
+}
+
+.team{
+    text-align: center;
+    margin-top: -14rem;
+}
+
+.team h3{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #808080;
+    padding-top: 15rem;
+}
+
+.team h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 0.5rem;
+    color: rgb(66, 66, 66);
+}
+
+.t-l{
+    border-bottom: 10px solid #035803;
+    margin: 0 26rem; 
+}
+
+.team p{
+    padding: 2rem 10rem;
+    font-size: 25px;
+    font-weight: 300;
+    color: #424141;
+}
+
+.members{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem 1rem;
+    margin: 2rem 4rem;
+}
+
+.memb{
+    text-align: center;
+    padding-top: 2rem;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    transition: transform .3s;
+    width: 250px;
+    
+}
+
+.memb:hover{
+    transform: translate(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+
+.memb h3{
+    text-transform: uppercase;
+    padding-top: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.memb p{
+    padding: 0.5rem;
+    font-weight: bold;
+    color: #808080;
+}
+
+.memb a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #035803;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.talk{
+    margin-top: 6rem;
+    text-align: center;
+    background-color: #035803;
+    color: #f5f5f5;
+}
+
+.talk h1{
+    padding: 3rem 0 1rem 0;
+}
+
+.t-line{
+    margin: 0 38rem;
+    border-bottom: 4px solid #f5f5f5;
+}
+
+.talk i{
+    padding: 2rem 0 5rem 0;
+}
+
+.questions{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(51, 51, 51);
+    letter-spacing: 1px;
+    padding: 3rem 20rem;
+}
+
+.qtn{
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.qtn h3{
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.qtn-line{
+    padding: 0.5rem 0;
+    border-bottom: 3px solid #f5f5f5;
+    margin-bottom: 1rem;
+}
+
+.qtn a{
+    text-decoration: none;
+    color: #f5f5f5;
+    padding-top: 2rem;
+}
+
+footer{
+    text-align: center;
+    background: #222;
+    letter-spacing: 1px;
+}
+
+footer p{
+    padding-top: 4rem;
+    color: #f5f5f5;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer h6{
+    padding: 1rem 0 3rem 0;
+    color: #f5f5f5;
+    font-weight: 550;  
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px){
+    .brand-title{
+        margin: 0;
+    }
+    
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        display: block;
+        margin: .5rem 1rem;
+    }
+
+    .navbar-links li a:hover{
+        border-bottom: none
+    }
+    
+    #current a{
+        border-bottom: none;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+    
+    .about-us{
+        background-position: bottom;
+    }
+
+    .about-us h1{
+        padding-top: 11rem;
+    }
+
+    .about-us p{
+        padding: 1rem;
+    }
+
+    .us{
+        margin: 5rem 0;
+    }
+    .us p{
+        padding: 1rem 0;
+    }
+
+    .line{
+        border-bottom: 4px solid #a0a0a0;
+        margin: 0 1rem;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0.5rem 0;
+    }
+
+    .text h3{
+        padding: 2rem 0 0 1rem;   
+    }
+
+    .text p{
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+    }
+
+    .t-l{
+        margin: 0 0.5rem;
+    }
+
+    .team p{
+        padding: 2rem 0.5rem 5rem 0.5rem;
+        text-align: justify;
+    }
+
+    .members{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 5rem;
+    }
+
+    .talk h1{
+        font-size: 20px;
+        padding: 1rem 0;
+    }
+    
+    .t-line{
+        margin: 0 5rem 0 5rem;
+    }
+
+    .talk i{
+        padding: 1rem 0;
+    }
+
+    .questions{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem 0;
+    }
+
+    .qtn h3{
+        padding-top: 2rem;
+    } 
+
+    .qtn-line{
+        margin: 0 10rem 1rem 10rem;
+    }
+
+    footer{
+        text-align: center;
+        background: #222;
+        letter-spacing: 0.1rem;
+    }
+
+    footer p{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    footer h6{
+        padding-bottom:10px;
+        font-size: 10px; 
+    }
+
+
+
+}
