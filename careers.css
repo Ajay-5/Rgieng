@@ -283,6 +283,10 @@ footer h6{
     .navbar-links.active{
         display: flex;
     }
+    
+    .career{
+        background-position: bottom left;
+    }
 
     .carrer h1{
         padding-top: 5rem;
@@ -290,7 +294,7 @@ footer h6{
 
     .career p{
         padding: 1rem;
-        text-align: justify;
+        color: #ffffff;
     }
 
     .la-line{
